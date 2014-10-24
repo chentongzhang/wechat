@@ -11,11 +11,11 @@ QQ群：    297489459
 ## 安装
 通过执行下列语句就可以完成安装
 
-	go get -u github.com/chanxuehong/wechat/...
+	go get -u github.com/magicshui/wechat/...
 
 ## 文档
 
-#### [在线文档](http://godoc.org/github.com/chanxuehong/wechat)
+#### [在线文档](http://godoc.org/github.com/magicshui/wechat)
 
 #### 离线文档
 通过上面步骤下载下来后，可以在shell(windows 下面是 cmd) 里运行

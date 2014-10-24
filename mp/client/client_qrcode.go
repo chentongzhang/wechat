@@ -1,6 +1,6 @@
 // @description wechat 是腾讯微信公众平台 api 的 golang 语言封装
-// @link        https://github.com/chanxuehong/wechat for the canonical source repository
-// @license     https://github.com/chanxuehong/wechat/blob/master/LICENSE
+// @link        https://github.com/magicshui/wechat for the canonical source repository
+// @license     https://github.com/magicshui/wechat/blob/master/LICENSE
 // @authors     chanxuehong(chanxuehong@gmail.com)
 
 package client
@@ -8,7 +8,7 @@ package client
 import (
 	"errors"
 	"fmt"
-	"github.com/chanxuehong/wechat/mp/qrcode"
+	"github.com/magicshui/wechat/mp/qrcode"
 	"io"
 	"net/http"
 	"os"
@@ -121,8 +121,8 @@ func QRCodeURL(ticket string) string {
 
 // 通过 ticket 换取二维码到 writer
 //  如果 httpClient == nil 则默认用 http.DefaultClient,
-//  see github.com/chanxuehong/wechat/CommonHttpClient 和
-//      github.com/chanxuehong/wechat/MediaHttpClient
+//  see github.com/magicshui/wechat/CommonHttpClient 和
+//      github.com/magicshui/wechat/MediaHttpClient
 func QRCodeDownloadToWriter(ticket string, writer io.Writer, httpClient *http.Client) (err error) {
 	if writer == nil {
 		return errors.New("writer == nil")
@@ -173,8 +173,8 @@ func (c *Client) QRCodeDownloadToWriter(ticket string, writer io.Writer) (err er
 
 // 通过 ticket 换取二维码到文件 filepath_
 //  如果 httpClient == nil 则默认用 http.DefaultClient,
-//  see github.com/chanxuehong/wechat/CommonHttpClient 和
-//      github.com/chanxuehong/wechat/MediaHttpClient
+//  see github.com/magicshui/wechat/CommonHttpClient 和
+//      github.com/magicshui/wechat/MediaHttpClient
 func QRCodeDownload(ticket, filepath_ string, httpClient *http.Client) (err error) {
 	file, err := os.Create(filepath_)
 	if err != nil {

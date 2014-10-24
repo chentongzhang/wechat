@@ -1,6 +1,6 @@
 // @description wechat 是腾讯微信公众平台 api 的 golang 语言封装
-// @link        https://github.com/chanxuehong/wechat for the canonical source repository
-// @license     https://github.com/chanxuehong/wechat/blob/master/LICENSE
+// @link        https://github.com/magicshui/wechat for the canonical source repository
+// @license     https://github.com/magicshui/wechat/blob/master/LICENSE
 // @authors     chanxuehong(chanxuehong@gmail.com)
 
 package client
@@ -9,7 +9,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	wechatjson "github.com/chanxuehong/wechat/json"
+	wechatjson "github.com/magicshui/wechat/json"
 	"net/http"
 )
 
@@ -21,8 +21,8 @@ type Client struct {
 
 // 创建一个新的 Client.
 //  如果 httpClient == nil 则默认用 http.DefaultClient,
-//  see github.com/chanxuehong/wechat/CommonHttpClient 和
-//      github.com/chanxuehong/wechat/MediaHttpClient
+//  see github.com/magicshui/wechat/CommonHttpClient 和
+//      github.com/magicshui/wechat/MediaHttpClient
 func NewClient(tokenService TokenService, httpClient *http.Client) (clt *Client) {
 	if tokenService == nil {
 		panic("tokenService == nil")

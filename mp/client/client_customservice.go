@@ -1,13 +1,13 @@
 // @description wechat 是腾讯微信公众平台 api 的 golang 语言封装
-// @link        https://github.com/chanxuehong/wechat for the canonical source repository
-// @license     https://github.com/chanxuehong/wechat/blob/master/LICENSE
+// @link        https://github.com/magicshui/wechat for the canonical source repository
+// @license     https://github.com/magicshui/wechat/blob/master/LICENSE
 // @authors     chanxuehong(chanxuehong@gmail.com)
 
 package client
 
 import (
 	"errors"
-	"github.com/chanxuehong/wechat/mp/customservice"
+	"github.com/magicshui/wechat/mp/customservice"
 )
 
 // 获取客服聊天记录
@@ -59,7 +59,7 @@ RETRY:
 	}
 }
 
-// 该结构实现了 github.com/chanxuehong/wechat/customservice.RecordIterator 接口
+// 该结构实现了 github.com/magicshui/wechat/customservice.RecordIterator 接口
 type customServiceRecordIterator struct {
 	lastRecordGetRequest *customservice.RecordGetRequest // 上一次查询的 request
 	lastRecordGetResult  []customservice.Record          // 上一次查询的 result

@@ -4,7 +4,7 @@
 创建二维码等等...
 
 ## access token 逻辑图
-![逻辑图](https://github.com/chanxuehong/wechat/blob/master/mp/client/token_service.png)
+![逻辑图](https://github.com/magicshui/wechat/blob/master/mp/client/token_service.png)
 
 ## 使用方法
 
@@ -23,7 +23,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/chanxuehong/wechat/mp/client"
+	"github.com/magicshui/wechat/mp/client"
 )
 
 // *DefaultTokenService 实现了 TokenService 接口.

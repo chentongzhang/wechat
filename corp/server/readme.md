@@ -25,9 +25,9 @@ MultiAgentFrontend 是并发安全的，可以动态增加（删除）Agent，�
 package main
 
 import (
-	"github.com/chanxuehong/wechat/corp/message/passive/request"
-	"github.com/chanxuehong/wechat/corp/message/passive/response"
-	"github.com/chanxuehong/wechat/corp/server"
+	"github.com/magicshui/wechat/corp/message/passive/request"
+	"github.com/magicshui/wechat/corp/message/passive/response"
+	"github.com/magicshui/wechat/corp/server"
 	"log"
 	"net/http"
 	"time"
